@@ -35,4 +35,3 @@ rawY = getY(scalpelOutput = scalpelOutput, videoType = "raw")
 processedY = getY(scalpelOutput = scalpelOutput, videoType = "processed")
 }
 }
-

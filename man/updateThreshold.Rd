@@ -34,4 +34,3 @@ scalpelOutput = updateThreshold(step0Output = scalpelOutput)
 \seealso{
 \code{\link{scalpelStep0}}
 }
-

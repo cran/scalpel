@@ -39,4 +39,3 @@ reviewOverlappingNeurons(scalpelOutput = scalpelOutput, neuronSet = "A")
 \seealso{
 \code{\link{reviewNeurons}}, \code{\link{updateNeurons}}, \code{\link{reviewNeuronsInteractive}}, \code{\link{updateNeuronsInteractive}}
 }
-

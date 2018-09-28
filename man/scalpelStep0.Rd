@@ -71,4 +71,3 @@ other steps in the pipeline can be run using the \code{\link{scalpelStep1}}, \co
 Results from this step can be summarized using \code{\link{summary}}, loaded at a later time using \code{\link{getScalpelStep0}}, and plotted using
 \code{\link{plotFrame}}, \code{\link{plotThresholdedFrame}}, and \code{\link{plotVideoVariance}}.
 }
-

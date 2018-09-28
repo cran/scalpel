@@ -68,4 +68,3 @@ plotCandidateFrame(scalpelOutput = scalpelOutput, AzeroIndex = 10, Y = rawY)
 \seealso{
 \code{\link{scalpelStep1}}, \code{\link{scalpel}}
 }
-

@@ -37,4 +37,3 @@ updateNeuronsInteractive(scalpelOutput = scalpelOutput, neuronSet = "A")
 \seealso{
 \code{\link{reviewNeuronsInteractive}}, \code{\link{reviewNeuronsMoreFrames}}, \code{\link{reviewOverlappingNeurons}}
 }
-

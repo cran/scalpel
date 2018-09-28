@@ -123,4 +123,3 @@ Results can be summarized using \code{\link{summary}}, loaded at a later time us
 \code{\link{plotSpatial}}, \code{\link{plotTemporal}}, \code{\link{plotCluster}}, \code{\link{plotVideoVariance}},
 \code{\link{plotFrame}}, \code{\link{plotThresholdedFrame}}, \code{\link{plotCandidateFrame}}, and \code{\link{plotBrightest}}.
 }
-

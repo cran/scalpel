@@ -393,8 +393,8 @@ scalpelStep1 = function(step0Output, minSize=25, maxSize=500, maxWidth=30, maxHe
 
       #extract preliminary dictionary elements from each frame
       #based on finding connected components of size 25 pixels or greater
-      AList[[qindex]] = Matrix(0, nrow=nrow(deltafoverfY), ncol=20000, sparse=TRUE)
-      AframeList[[qindex]] = rep(NA, 20000)
+      AList[[qindex]] = Matrix(0, nrow=nrow(deltafoverfY), ncol=60000, sparse=TRUE)
+      AframeList[[qindex]] = rep(NA, 60000)
 
       #only consider frames which have at least 25 pixels above the threshold
       brightFrames = which(colSums(thresholdYSp)>=25)
@@ -420,9 +420,16 @@ scalpelStep1 = function(step0Output, minSize=25, maxSize=500, maxWidth=30, maxHe
       }
       rm('thresholdYSp')
 
-      filled = 1:max(which(colSums(AList[[qindex]])>0))
-      AList[[qindex]] = AList[[qindex]][,filled]
-      AframeList[[qindex]] = AframeList[[qindex]][filled]
+      #### updated 11/29/17: account for possibly not finding any prelim elements
+      #### BEGINNING OF UPDATES
+      if (length(which(colSums(AList[[qindex]])>0))>0) { 
+        filled = 1:max(which(colSums(AList[[qindex]])>0))
+        AList[[qindex]] = AList[[qindex]][,filled]
+        AframeList[[qindex]] = AframeList[[qindex]][filled]
+      } else {
+        AList[[qindex]] = NULL
+        AframeList[[qindex]] = NULL
+      }
     }
     utils::write.table(1,paste0(step0Output$outputFolder,"timings/Step1_part",part,"_3_finishsegmentation.txt"))
     rm('deltafoverfY')
@@ -430,15 +437,18 @@ scalpelStep1 = function(step0Output, minSize=25, maxSize=500, maxWidth=30, maxHe
     #combine components from different thresholds
     A = AList[[1]]
     Aframes = AframeList[[1]]
-    Athreshold = rep(thresholdVec[1], ncol(AList[[1]]))
+    if (!is.null(AList[[1]])) Athreshold = rep(thresholdVec[1], ncol(AList[[1]])) else Athreshold = c()
 
     if (length(AList)>1) {
       for (i in 2:length(AList)) {
         A = cbind(A, AList[[i]])
         Aframes = c(Aframes, AframeList[[i]])
-        Athreshold = c(Athreshold, rep(thresholdVec[i], ncol(AList[[i]])))
+        if (!is.null(AList[[i]])) Athreshold = c(Athreshold, rep(thresholdVec[i], ncol(AList[[i]])))
       }
     }
+    if (is.null(A)) stop("No preliminary neurons found during Step 1. Different 'thresholdVec' needed.")
+    #### END OF UPDATES
+    
     saveRDS(A, paste0(step1folder,"Azero_part",part,".rds"))
     saveRDS(Aframes, paste0(step1folder,"AzeroFrames_part",part,".rds"))
     saveRDS(Athreshold, paste0(step1folder,"AzeroThreshold_part",part,".rds"))

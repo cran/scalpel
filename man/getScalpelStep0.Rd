@@ -33,4 +33,3 @@ out = getScalpelStep0(outputFolder = outputFolder)
 \seealso{
 \code{\link{scalpelStep0}}, \code{\link{scalpel}}
 }
-

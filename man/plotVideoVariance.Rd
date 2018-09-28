@@ -66,4 +66,3 @@ plotVideoVariance(scalpelOutput = scalpelOutput, neuronSet = "Afilter", Y = rawY
 \seealso{
 \code{\link{scalpelStep0}}, \code{\link{scalpel}}
 }
-

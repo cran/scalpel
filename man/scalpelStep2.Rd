@@ -73,4 +73,3 @@ other steps in the pipeline can be run using the \code{\link{scalpelStep0}}, \co
 Results from this step can be summarized using \code{\link{summary}}, loaded at a later time using \code{\link{getScalpelStep2}}, and plotted using
 \code{\link{plotCluster}} and \code{\link{plotSpatial}}.
 }
-

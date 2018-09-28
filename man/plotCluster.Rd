@@ -50,4 +50,3 @@ plotCluster(scalpelOutput = scalpelOutput, AfilterIndex = 2)
 \seealso{
 \code{\link{scalpelStep2}}, \code{\link{scalpel}}
 }
-

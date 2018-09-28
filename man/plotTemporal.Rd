@@ -58,4 +58,3 @@ plotTemporal(scalpelOutput = scalpelOutput, neuronsToDisplay = c(1,2),
 \seealso{
 \code{\link{scalpelStep3}}, \code{\link{scalpel}}, \code{\link{plotResults}}
 }
-

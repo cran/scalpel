@@ -96,4 +96,3 @@ other steps in the pipeline can be run using the \code{\link{scalpelStep0}}, \co
 Results from this step can be summarized using \code{\link{summary}}, loaded at a later time using \code{\link{getScalpelStep3}}, and plotted using
 \code{\link{plotSpatial}}, \code{\link{plotTemporal}}, \code{\link{plotResults}}, and \code{\link{plotBrightest}}.
 }
-

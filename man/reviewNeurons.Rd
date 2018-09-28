@@ -59,4 +59,3 @@ and the argument \code{neuronsToDisplay="kept"} can be used with \code{\link{plo
  \code{\link{plotTemporal}}, and \code{\link{plotSpatial}}. Finally, the argument \code{excludeReps="discarded"} allows
  the discarded dictionary elements to be excluded from the sparse group lasso model when running \code{\link{scalpelStep3}}.
 }
-

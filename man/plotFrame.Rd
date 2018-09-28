@@ -65,4 +65,3 @@ plotFrame(scalpelOutput = scalpelOutput, frame = 100, Y = rawY)
 \seealso{
 \code{\link{scalpelStep0}}, \code{\link{scalpel}}
 }
-

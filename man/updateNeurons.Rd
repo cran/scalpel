@@ -35,4 +35,3 @@ updateNeurons(scalpelOutput = scalpelOutput, neuronSet = "Afilter")
 \seealso{
 \code{\link{reviewNeurons}}, \code{\link{reviewNeuronsMoreFrames}}, \code{\link{reviewOverlappingNeurons}}
 }
-

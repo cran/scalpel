@@ -395,7 +395,8 @@ getScalpelStep3 = function(outputFolder, version=NULL, cutoff=0.18, omega=0.2, l
 getScalpel = function(outputFolder, version=NULL, cutoff=0.18, omega=0.2, lambdaMethod="trainval", lambda=NULL, minClusterSize=1, alpha=0.9, removeBorder=FALSE, excludeReps=NULL) {
 
   if (is.null(version)) version = getStep1Version(outputFolder = outputFolder)
-  output = getScalpelStep3(outputFolder = outputFolder, version = version, omega = 0.2, cutoff = cutoff, lambdaMethod = lambdaMethod, lambda = lambda,
+  #bug fixed 11/8/17: line below had 'omega = 0.2', instead of 'omega = omega'
+  output = getScalpelStep3(outputFolder = outputFolder, version = version, omega = omega, cutoff = cutoff, lambdaMethod = lambdaMethod, lambda = lambda,
                                 minClusterSize = minClusterSize, alpha = alpha, removeBorder = removeBorder, excludeReps=excludeReps)
   class(output) = "scalpel"
 

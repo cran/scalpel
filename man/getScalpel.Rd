@@ -67,4 +67,3 @@ out = getScalpel(outputFolder = outputFolder, omega = 0.2, cutoff = 0.18,
 \seealso{
 \code{\link{scalpel}}
 }
-

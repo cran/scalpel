@@ -69,4 +69,3 @@ plotBrightest(scalpelOutput = scalpelOutput, AfilterIndex = 2, Y = rawY,
 \seealso{
 \code{\link{scalpel}}, \code{\link{scalpelStep3}}
 }
-

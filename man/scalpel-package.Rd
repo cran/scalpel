@@ -57,4 +57,3 @@ SCALPEL: Extracting Neurons from Calcium Imaging Data.
 }
 
 }
-

@@ -38,4 +38,3 @@ getNeuronStatus(scalpelOutput = scalpelOutput, neuronSet = "Afilter")
 \seealso{
 \code{\link{reviewNeurons}}, \code{\link{reviewNeuronsInteractive}}
 }
-

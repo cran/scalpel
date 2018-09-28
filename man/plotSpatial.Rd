@@ -74,4 +74,3 @@ plotSpatial(scalpelOutput = scalpelOutput, neuronsToDisplay = c(1,2), neuronSet 
 \seealso{
 \code{\link{scalpelStep2}}, \code{\link{scalpelStep3}}, \code{\link{scalpel}}, \code{\link{plotResults}}
 }
-

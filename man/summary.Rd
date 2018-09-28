@@ -2,11 +2,11 @@
 % Please edit documentation in R/SCALPEL_helper.R
 \name{summary}
 \alias{summary}
-\alias{summary.scalpel}
 \alias{summary.scalpelStep0}
 \alias{summary.scalpelStep1}
 \alias{summary.scalpelStep2}
 \alias{summary.scalpelStep3}
+\alias{summary.scalpel}
 \title{Summarize results from SCALPEL pipeline.}
 \usage{
 \method{summary}{scalpelStep0}(object, ...)
@@ -48,4 +48,3 @@ summary(Step0Out)
  summary(scalpelOutput, step = 3)
 }
 }
-

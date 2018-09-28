@@ -62,4 +62,3 @@ plotThresholdedFrame(scalpelOutput = scalpelOutput, frame = 100,
 \seealso{
 \code{\link{scalpelStep0}}, \code{\link{scalpel}}
 }
-
