@@ -4,9 +4,18 @@
 \alias{plotResults}
 \title{Plot both the spatial and temporal components from Step 3 of SCALPEL.}
 \usage{
-plotResults(scalpelOutput, neuronsToDisplay = NULL, colVec = NULL,
-  titleA = "", titleZ = "", ylabZ = "", fileName = NULL,
-  pctTransp = 0.7, number = TRUE, border = FALSE)
+plotResults(
+  scalpelOutput,
+  neuronsToDisplay = NULL,
+  colVec = NULL,
+  titleA = "",
+  titleZ = "",
+  ylabZ = "",
+  fileName = NULL,
+  pctTransp = 0.7,
+  number = TRUE,
+  border = FALSE
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of the SCALPEL functions:

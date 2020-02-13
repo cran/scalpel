@@ -4,8 +4,12 @@
 \alias{plotCluster}
 \title{Plot a summary of a given cluster from Step 2 of SCALPEL.}
 \usage{
-plotCluster(scalpelOutput, AIndex = NULL, AfilterIndex = NULL,
-  pctTransp = 0.01)
+plotCluster(
+  scalpelOutput,
+  AIndex = NULL,
+  AfilterIndex = NULL,
+  pctTransp = 0.01
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of the SCALPEL functions:

@@ -4,9 +4,16 @@
 \alias{plotVideoVariance}
 \title{Plot a summary of the fluorescence in the video.}
 \usage{
-plotVideoVariance(scalpelOutput, neuronSet = "", videoType = "processed",
-  neuronsToOutline = "all", shrinkLargest = FALSE, shrinkQuantile = 0.95,
-  title = "", Y = NULL)
+plotVideoVariance(
+  scalpelOutput,
+  neuronSet = "",
+  videoType = "processed",
+  neuronsToOutline = "all",
+  shrinkLargest = FALSE,
+  shrinkQuantile = 0.95,
+  title = "",
+  Y = NULL
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of the SCALPEL functions:

@@ -4,8 +4,15 @@
 \alias{plotTemporal}
 \title{Plot temporal components from Step 3 of SCALPEL.}
 \usage{
-plotTemporal(scalpelOutput, neuronsToDisplay = NULL, colVec = NULL,
-  ylab = "", title = "", fileName = NULL, lambdaIndex = NULL)
+plotTemporal(
+  scalpelOutput,
+  neuronsToDisplay = NULL,
+  colVec = NULL,
+  ylab = "",
+  title = "",
+  fileName = NULL,
+  lambdaIndex = NULL
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of these SCALPEL functions:

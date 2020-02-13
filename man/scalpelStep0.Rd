@@ -4,8 +4,13 @@
 \alias{scalpelStep0}
 \title{Perform Step 0 of SCALPEL.}
 \usage{
-scalpelStep0(outputFolder, rawDataFolder, videoHeight, fileType = "R",
-  processSeparately = TRUE)
+scalpelStep0(
+  outputFolder,
+  rawDataFolder,
+  videoHeight,
+  fileType = "R",
+  processSeparately = TRUE
+)
 }
 \arguments{
 \item{outputFolder}{The existing directory where the results should be saved.}

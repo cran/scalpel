@@ -5,8 +5,14 @@
 getSpatialComponents = function(frameVec, videoHeight, connectivity=4, minSize, maxSize, maxWidth, maxHeight) {
 
   #use ConnCompLabel function from SDMTools package to find connected components
-  connComp = SDMTools::ConnCompLabel(Matrix(frameVec, nrow=videoHeight, sparse=T))
-
+  #connComp = SDMTools::ConnCompLabel(Matrix(frameVec, nrow=videoHeight, sparse=T))
+  #code from SDMTools is now incorporated directly into the package b/c SDMTools is no longer maintained on CRAN
+  matForComp = Matrix(frameVec, nrow=videoHeight, sparse=T)
+  attrib = attributes(matForComp)
+  #run the connected component labelling
+  connComp = .Call('ccl',as.matrix(matForComp),PACKAGE='scalpel')
+  attributes(connComp) = attrib
+  
   #remove connected components of size smaller than 25 pixels
   smallComp = as.numeric(names(which(table(as.vector(connComp))<25)))
   connComp[which(as.vector(connComp) %in% smallComp)] = 0

@@ -4,8 +4,12 @@
 \alias{reviewNeurons}
 \title{Manually classify the identified neurons from SCALPEL.}
 \usage{
-reviewNeurons(scalpelOutput, neuronSet, keepClusterSize = NULL,
-  discardZeroedOut = FALSE)
+reviewNeurons(
+  scalpelOutput,
+  neuronSet,
+  keepClusterSize = NULL,
+  discardZeroedOut = FALSE
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of the SCALPEL functions:

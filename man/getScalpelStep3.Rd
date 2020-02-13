@@ -4,9 +4,18 @@
 \alias{getScalpelStep3}
 \title{Read in results from Step 3 of SCALPEL.}
 \usage{
-getScalpelStep3(outputFolder, version = NULL, cutoff = 0.18, omega = 0.2,
-  lambdaMethod = "trainval", minClusterSize = 1, alpha = 0.9,
-  lambda = NULL, removeBorder = FALSE, excludeReps = NULL)
+getScalpelStep3(
+  outputFolder,
+  version = NULL,
+  cutoff = 0.18,
+  omega = 0.2,
+  lambdaMethod = "trainval",
+  minClusterSize = 1,
+  alpha = 0.9,
+  lambda = NULL,
+  removeBorder = FALSE,
+  excludeReps = NULL
+)
 }
 \arguments{
 \item{outputFolder}{The existing directory where the results that the user wishes to use are saved.}

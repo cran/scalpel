@@ -4,9 +4,17 @@
 \alias{plotBrightest}
 \title{Plot the most active frames for a given neuron.}
 \usage{
-plotBrightest(scalpelOutput, AfilterIndex, videoType = "processed",
-  neuronsToOutline = "all", brightIndex = 1, shrinkLargest = FALSE,
-  shrinkCutoff = NULL, title = NULL, Y = NULL)
+plotBrightest(
+  scalpelOutput,
+  AfilterIndex,
+  videoType = "processed",
+  neuronsToOutline = "all",
+  brightIndex = 1,
+  shrinkLargest = FALSE,
+  shrinkCutoff = NULL,
+  title = NULL,
+  Y = NULL
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of the SCALPEL functions:

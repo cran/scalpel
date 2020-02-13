@@ -4,9 +4,18 @@
 \alias{getScalpel}
 \title{Read in results from SCALPEL.}
 \usage{
-getScalpel(outputFolder, version = NULL, cutoff = 0.18, omega = 0.2,
-  lambdaMethod = "trainval", lambda = NULL, minClusterSize = 1,
-  alpha = 0.9, removeBorder = FALSE, excludeReps = NULL)
+getScalpel(
+  outputFolder,
+  version = NULL,
+  cutoff = 0.18,
+  omega = 0.2,
+  lambdaMethod = "trainval",
+  lambda = NULL,
+  minClusterSize = 1,
+  alpha = 0.9,
+  removeBorder = FALSE,
+  excludeReps = NULL
+)
 }
 \arguments{
 \item{outputFolder}{The existing directory where the results that the user wishes to use are saved.}

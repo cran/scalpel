@@ -4,11 +4,26 @@
 \alias{scalpel}
 \title{Perform entire SCALPEL pipeline.}
 \usage{
-scalpel(outputFolder, rawDataFolder, videoHeight, minClusterSize = 1,
-  lambdaMethod = "trainval", lambda = NULL, cutoff = 0.18, omega = 0.2,
-  fileType = "R", processSeparately = TRUE, minSize = 25, maxSize = 500,
-  maxWidth = 30, maxHeight = 30, removeBorder = FALSE, alpha = 0.9,
-  thresholdVec = NULL, maxSizeToCluster = 3000)
+scalpel(
+  outputFolder,
+  rawDataFolder,
+  videoHeight,
+  minClusterSize = 1,
+  lambdaMethod = "trainval",
+  lambda = NULL,
+  cutoff = 0.18,
+  omega = 0.2,
+  fileType = "R",
+  processSeparately = TRUE,
+  minSize = 25,
+  maxSize = 500,
+  maxWidth = 30,
+  maxHeight = 30,
+  removeBorder = FALSE,
+  alpha = 0.9,
+  thresholdVec = NULL,
+  maxSizeToCluster = 3000
+)
 }
 \arguments{
 \item{outputFolder}{Step 0 parameter: The existing directory where the results should be saved.}

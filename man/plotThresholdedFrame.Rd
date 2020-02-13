@@ -4,8 +4,16 @@
 \alias{plotThresholdedFrame}
 \title{Plot a frame of the video with shading.}
 \usage{
-plotThresholdedFrame(scalpelOutput, frame, threshold, shrinkLargest = FALSE,
-  shrinkCutoff = NULL, title = NULL, col = "yellow", Y = NULL)
+plotThresholdedFrame(
+  scalpelOutput,
+  frame,
+  threshold,
+  shrinkLargest = FALSE,
+  shrinkCutoff = NULL,
+  title = NULL,
+  col = "yellow",
+  Y = NULL
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of the SCALPEL functions:

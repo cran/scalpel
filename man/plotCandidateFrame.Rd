@@ -4,9 +4,17 @@
 \alias{plotCandidateFrame}
 \title{Plot preliminary dictionary element from Step 1 of SCALPEL and its corresponding frame.}
 \usage{
-plotCandidateFrame(scalpelOutput, AzeroIndex = NULL, AIndex = NULL,
-  AfilterIndex = NULL, member = NULL, videoType = "processed",
-  shrinkLargest = FALSE, shrinkCutoff = NULL, Y = NULL)
+plotCandidateFrame(
+  scalpelOutput,
+  AzeroIndex = NULL,
+  AIndex = NULL,
+  AfilterIndex = NULL,
+  member = NULL,
+  videoType = "processed",
+  shrinkLargest = FALSE,
+  shrinkCutoff = NULL,
+  Y = NULL
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of the SCALPEL functions:

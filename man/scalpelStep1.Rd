@@ -4,8 +4,14 @@
 \alias{scalpelStep1}
 \title{Perform Step 1 of SCALPEL.}
 \usage{
-scalpelStep1(step0Output, minSize = 25, maxSize = 500, maxWidth = 30,
-  maxHeight = 30, thresholdVec = NULL)
+scalpelStep1(
+  step0Output,
+  minSize = 25,
+  maxSize = 500,
+  maxWidth = 30,
+  maxHeight = 30,
+  thresholdVec = NULL
+)
 }
 \arguments{
 \item{step0Output}{An object of class \code{scalpel} or \code{scalpelStep0}, which result from running the

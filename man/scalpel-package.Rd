@@ -13,8 +13,9 @@ The pipeline involves several steps, each of which is described briefly in its c
 function. See \code{\link{scalpelStep0}}, \code{\link{scalpelStep1}}, \code{\link{scalpelStep2}},
 \code{\link{scalpelStep3}} for more details. Results can be summarized using \code{\link{summary}}
 and the main plotting function is \code{\link{plotResults}}, which displays the estimated spatial and temporal components.
-Full details for the SCALPEL method are provided in Petersen, A., Simon, N., and Witten, D. (Forthcoming).
-SCALPEL: Extracting Neurons from Calcium Imaging Data.
+Full details for the SCALPEL method are provided in Petersen, Ashley; Simon, Noah; Witten, Daniela. 
+SCALPEL: Extracting neurons from calcium imaging data. Ann. Appl. Stat. 12 (2018), no. 4, 2430--2456. 
+doi:10.1214/18-AOAS1159. https://projecteuclid.org/euclid.aoas/1542078051
 }
 \examples{
 \dontrun{

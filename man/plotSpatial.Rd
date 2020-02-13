@@ -4,10 +4,21 @@
 \alias{plotSpatial}
 \title{Plot spatial components from Steps 2 or 3 of SCALPEL.}
 \usage{
-plotSpatial(scalpelOutput = NULL, neuronSet = "", neuronsToDisplay = NULL,
-  colVec = NULL, title = "", fileName = NULL, pctTransp = 0.7,
-  number = TRUE, addToPlot = FALSE, border = FALSE, zoom = FALSE,
-  A = NULL, videoHeight = NULL)
+plotSpatial(
+  scalpelOutput = NULL,
+  neuronSet = "",
+  neuronsToDisplay = NULL,
+  colVec = NULL,
+  title = "",
+  fileName = NULL,
+  pctTransp = 0.7,
+  number = TRUE,
+  addToPlot = FALSE,
+  border = FALSE,
+  zoom = FALSE,
+  A = NULL,
+  videoHeight = NULL
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of these SCALPEL functions:

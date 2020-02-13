@@ -4,8 +4,7 @@
 \alias{scalpelStep2}
 \title{Perform Step 2 of SCALPEL.}
 \usage{
-scalpelStep2(step1Output, cutoff = 0.18, omega = 0.2,
-  maxSizeToCluster = 3000)
+scalpelStep2(step1Output, cutoff = 0.18, omega = 0.2, maxSizeToCluster = 3000)
 }
 \arguments{
 \item{step1Output}{An object of class \code{scalpel} or \code{scalpelStep1}, which result from running the

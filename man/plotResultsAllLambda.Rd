@@ -4,9 +4,17 @@
 \alias{plotResultsAllLambda}
 \title{Plot both the spatial and temporal components for the sequence of lambda values from Step 3 of SCALPEL.}
 \usage{
-plotResultsAllLambda(scalpelOutput, neuronsToDisplay = NULL, colVec = NULL,
-  titleA = "", ylabZ = "", fileName = NULL, pctTransp = 0.7,
-  number = TRUE, border = FALSE)
+plotResultsAllLambda(
+  scalpelOutput,
+  neuronsToDisplay = NULL,
+  colVec = NULL,
+  titleA = "",
+  ylabZ = "",
+  fileName = NULL,
+  pctTransp = 0.7,
+  number = TRUE,
+  border = FALSE
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of the SCALPEL functions:

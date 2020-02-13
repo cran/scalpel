@@ -4,9 +4,15 @@
 \alias{scalpelStep3}
 \title{Perform Step 3 of SCALPEL.}
 \usage{
-scalpelStep3(step2Output, lambdaMethod = "trainval", lambda = NULL,
-  minClusterSize = 1, alpha = 0.9, removeBorder = FALSE,
-  excludeReps = NULL)
+scalpelStep3(
+  step2Output,
+  lambdaMethod = "trainval",
+  lambda = NULL,
+  minClusterSize = 1,
+  alpha = 0.9,
+  removeBorder = FALSE,
+  excludeReps = NULL
+)
 }
 \arguments{
 \item{step2Output}{An object of class \code{scalpel} or \code{scalpelStep2}, which result from running the

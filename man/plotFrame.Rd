@@ -4,10 +4,17 @@
 \alias{plotFrame}
 \title{Plot a frame of the video.}
 \usage{
-plotFrame(scalpelOutput, frame, videoType = "processed",
-  shrinkLargest = FALSE, shrinkCutoff = NULL, title = NULL,
-  col = grDevices::grey(seq(0, 1, length = 256)), addToPlot = FALSE,
-  Y = NULL)
+plotFrame(
+  scalpelOutput,
+  frame,
+  videoType = "processed",
+  shrinkLargest = FALSE,
+  shrinkCutoff = NULL,
+  title = NULL,
+  col = grDevices::grey(seq(0, 1, length = 256)),
+  addToPlot = FALSE,
+  Y = NULL
+)
 }
 \arguments{
 \item{scalpelOutput}{An object returned by one of the SCALPEL functions:
